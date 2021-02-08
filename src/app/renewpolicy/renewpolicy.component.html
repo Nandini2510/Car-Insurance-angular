@@ -1,0 +1,35 @@
+<form2 [formGroup]="renew.form" class="normal-form">
+    <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile>
+    <div class="controlers-containers">
+        <input type="hidden" formControlName="$key"/>
+        <mat-form-field>
+            <input formControlName="fullname" matInput placeholder="Full Name"/>
+        </mat-form-field>
+        <mat-form-field>
+            <input formControlName="brandno" matInput placeholder="Brand No."/>
+        </mat-form-field>
+        <mat-form-field>
+            <input formControlName="prevpolicy" matInput placeholder="Previous Policy No."/>
+        </mat-form-field>
+        
+       
+          
+        <div class="button-row">
+            <button mat-raised-button color="primary" type="submit">Submit</button>
+            <button mat-raised-button color="warn" (click)="onClear()" >Clear</button>
+        </div>
+       
+    </div>
+    </mat-grid-tile>
+       
+    <mat-grid-tile>
+        <mat-form-field>
+            <input formControlName="dateofregistration" matInput [matDatepicker]="picker" placeholder="Date of Registration"/>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </mat-grid-tile>
+    </mat-grid-list>
+    </form2>
+    
