@@ -9,5 +9,6 @@
       "jasmine",
       "node"
     ]
-  }
+  },
+  // "typescript.tsdk": "./node_modules/typescript/lib"
 }

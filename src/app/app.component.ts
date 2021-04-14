@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Buypolicy } from './shared/buypolicy.model'
 
 @Component({
   selector: 'app-root',

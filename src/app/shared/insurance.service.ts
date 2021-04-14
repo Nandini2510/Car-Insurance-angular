@@ -1,11 +1,20 @@
 import { Injectable } from '@angular/core';
+// import { HttpClient } from '@angular/common/http';
+// import { Observable } from 'rxjs/Observable';
+// import 'rxjs/add/operator/map';
+// import 'rxjs/add/operator/toPromise';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { Buypolicy } from './buypolicy.model';
 @Injectable({
   providedIn: 'root'
 })
 export class InsuranceService {
+  // selectedBuypolicy!: Buypolicy;
+  // buypolicy!: Buypolicy[];
 
-  constructor() { }
+  constructor() {
+
+  }
   form: FormGroup = new FormGroup({
     $key: new FormControl(null),
     fullname: new FormControl('', Validators.required),
